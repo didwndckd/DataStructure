@@ -72,7 +72,7 @@
       ```swift
       func inOrder(_ node: Node?) {
         guard let node = node else { return }
-        in)rder(node.left) // 왼쪽 가지 인오더
+        inOrder(node.left) // 왼쪽 가지 인오더
         visit(node) // 자기자신 처리
         inOrder(node.right) // 오른쪽 가지 인오더
       }
