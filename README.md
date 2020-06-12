@@ -7,7 +7,7 @@
 - Language: Swift
 
 ## Contents
-- stack
+- [Stack](https://github.com/JoongChangYang/DataStructure/blob/master/Stack.md)
 - queue
 - graph
 - [Tree](https://github.com/JoongChangYang/DataStructure/blob/master/Tree.md)
