@@ -16,24 +16,25 @@
 - 배열을 이용한 구현
 
   ```swift
-  
   class Stack<T> {
       private var stack = [T]()
       private var size = 0
       
-      func push(_ data: T) {
+      func push(data: T) {
           stack.append(data)
           size += 1
       }
       
-      func pop() -> T {
+      func pop() -> T? {
+          guard size > 0 else { return nil }
           let data = stack[size - 1]
           stack.remove(at: size - 1)
           size -= 1
           return data
       }
       
-      func peek() -> T {
+      func peek() -> T? {
+          guard size > 0 else { return nil }
           return stack[size - 1]
       }
       
