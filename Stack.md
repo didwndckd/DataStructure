@@ -56,10 +56,6 @@
           init(data: T) {
               self.data = data
           }
-          
-          deinit {
-              print(#function, data)
-          }
       }
       
       private var top: Node?
