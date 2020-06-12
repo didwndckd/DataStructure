@@ -56,32 +56,29 @@
           init(data: T) {
               self.data = data
           }
+          
+          deinit {
+              print(#function, data)
+          }
       }
       
       private var top: Node?
       var isEmpty: Bool { top == nil }
       
       func push(data: T) {
-          guard let top = self.top else {
-              self.top = Node(data: data)
-              return
-          }
-          
           let node = Node(data: data)
           node.next = top
           self.top = node
       }
       
       func pop() -> T? {
-          guard let top = self.top else { return nil }
-          let data = top.data
-          self.top = top.next
+          let data = top?.data
+          self.top = top?.next
           return data
       }
       
       func peek() -> T? {
-          guard let top = self.top else { return nil }
-          return top.data
+          return top?.data
       }
       
   }
