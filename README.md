@@ -8,7 +8,7 @@
 
 ## Contents
 - [Stack](https://github.com/JoongChangYang/DataStructure/blob/master/Stack.md)
-- queue
+- [Queue](https://github.com/JoongChangYang/DataStructure/blob/master/Queue.md)
 - graph
 - [Tree](https://github.com/JoongChangYang/DataStructure/blob/master/Tree.md)
 
