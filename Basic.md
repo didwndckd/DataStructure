@@ -2,12 +2,12 @@
 
 ## Contents
 
-- [Abstract Data Type(추상 자료형)]()
-- [Data Structure(자료 구조)]()
-- [Types of Data Structure(자료 구조의 종류)]()
-- [Principles(원칙)]()
-- [Complexity(복잡성)]()
-- [Common Asymptotic Notations(표기법)]()
+- [Abstract Data Type(추상 자료형)]([https://github.com/JoongChangYang/DataStructure/blob/master/Basic.md#abstract-data-type%EC%B6%94%EC%83%81-%EC%9E%90%EB%A3%8C%ED%98%95](https://github.com/JoongChangYang/DataStructure/blob/master/Basic.md#abstract-data-type추상-자료형))
+- [Data Structure(자료 구조)]([https://github.com/JoongChangYang/DataStructure/blob/master/Basic.md#data-structure%EC%9E%90%EB%A3%8C-%EA%B5%AC%EC%A1%B0](https://github.com/JoongChangYang/DataStructure/blob/master/Basic.md#data-structure자료-구조))
+- [Types of Data Structure(자료 구조의 종류)]([https://github.com/JoongChangYang/DataStructure/blob/master/Basic.md#types-of-data-structure%EC%9E%90%EB%A3%8C-%EA%B5%AC%EC%A1%B0%EC%9D%98-%EC%A2%85%EB%A5%98](https://github.com/JoongChangYang/DataStructure/blob/master/Basic.md#types-of-data-structure자료-구조의-종류))
+- [Principles(원칙)]([https://github.com/JoongChangYang/DataStructure/blob/master/Basic.md#principles%EC%9B%90%EC%B9%99](https://github.com/JoongChangYang/DataStructure/blob/master/Basic.md#principles원칙))
+- [Complexity(복잡성)]([https://github.com/JoongChangYang/DataStructure/blob/master/Basic.md#complexity%EB%B3%B5%EC%9E%A1%EC%84%B1](https://github.com/JoongChangYang/DataStructure/blob/master/Basic.md#complexity복잡성))
+- [Common Asymptotic Notations(표기법)]([https://github.com/JoongChangYang/DataStructure/blob/master/Basic.md#common-asymptotic-notations%ED%91%9C%EA%B8%B0%EB%B2%95](https://github.com/JoongChangYang/DataStructure/blob/master/Basic.md#common-asymptotic-notations표기법))
 
 
 
