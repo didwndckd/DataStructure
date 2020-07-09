@@ -52,7 +52,7 @@
 
 |                              A                               |                              B                               |                              C                               |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| ![CompleteBinaryTree](https://github.com/JoongChangYang/DataStructure/blob/master/Assets/CompleteBinaryTree.png) | ![CompleteBinaryTree2](https://github.com/JoongChangYang/DataStructure/blob/master/Assets/CompleteBinaryTree2.png) | ![Non-CompleteBinaryTree](https://github.com/JoongChangYang/DataStructure/blob/master/Assets/Non-CompleteBinaryTree.png) |
+| ![CompleteBinaryTree2](https://github.com/JoongChangYang/DataStructure/blob/master/Assets/CompleteBinaryTree2.png) | ![CompleteBinaryTree](https://github.com/JoongChangYang/DataStructure/blob/master/Assets/CompleteBinaryTree.png) | ![Non-CompleteBinaryTree](https://github.com/JoongChangYang/DataStructure/blob/master/Assets/Non-CompleteBinaryTree.png) |
 
 
 
