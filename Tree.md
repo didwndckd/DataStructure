@@ -125,19 +125,23 @@
 
 - DFS 순회 방법: 노드를 언제 처리할 것인지의 차이
 
+  ![Full Binary Tree](https://github.com/JoongChangYang/DataStructure/blob/master/Assets/FullBinaryTree.png)
+
   - 전위 순회(Pre-Order)
 
     - 부모의 값을 이용해서 자식의 값을 구해야 할 때 사용할 수 있다.
 
     - 현재 노드 -> 왼쪽가지 -> 오른쪽 가지
-
+  
+    - `1` → `2` → `4` → `5` → `3` → `6` → `7`
+  
       ```swift
       func preOrder(_ node: Node?) {
         guard let node = node else { return }
         visit(node) // 자기 자신 처리
-        preOrder(node.left) // 왼쪽 가지 프리오더
+      preOrder(node.left) // 왼쪽 가지 프리오더
         preOrder(node.right) // 오른쪽 가지 프리오더
-      }
+    }
       ```
 
       
@@ -145,33 +149,37 @@
   - 중위 순회(In-Order)
 
     - BST(Binary Search Tree)에서 삭제를 구현할 때 인오더 successor를 이용할때 사용할 수 있다.
-
+  
     - 왼쪽가지 -> 현재 노드 -> 오른쪽 가지
-
+  
+    - `4` → `2` → `5` → `1` → `6` → `3` → `7` 
+  
       ```swift
       func inOrder(_ node: Node?) {
-        guard let node = node else { return }
+      guard let node = node else { return }
         inOrder(node.left) // 왼쪽 가지 인오더
-        visit(node) // 자기자신 처리
+      visit(node) // 자기자신 처리
         inOrder(node.right) // 오른쪽 가지 인오더
-      }
+    }
       ```
 
   - 후위 순회(Post-Order)
-
+  
     - Dynamic Programming, Segment Tree등 트리를 사용하는 대부분의 알고리즘에서 사용됨
-
+  
     - 왼쪽가지 -> 오른쪽 가지 -> 현재 노드
-
-      ```swift
+  
+    - `4` → `5` → `2` → `6` → `7` → `3` → `1`
+    
+    ```swift
       func postOrder(_ node: Node?) {
-        guard let node = node else { return }
+      guard let node = node else { return }
         postOrder(node.left) // 왼쪽 가지 포스트오더
         postOrder(node.right) // 오른쪽 가지 포스트오더
         visit(node) // 자기자신 처리
-      }
+    }
       ```
-
+    
       
-
+  
   
