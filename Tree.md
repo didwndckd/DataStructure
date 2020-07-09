@@ -8,7 +8,7 @@
   - 트리는 하나의 루트 노드를 갖는다
   - 루트 노드는 0개 이상의 자식 노드를 갖고 있다.
   - 그 자식노드 또한 0개 이상의 자식노드를 갖고 있고, 이는 반복적으로 정의됨
-  - 비선형 가료구조로 계층적 관계를 표현한다. (디렉터리 구조, 조직도 등)
+  - 비선형 자료구조로 계층적 관계를 표현한다. (디렉터리 구조, 조직도 등)
   - 정점의 개수 V, 간선의 개수 V - 1
   - 트리의 성일뿐, 위를 만족한다고해서 트리는 아니다. **연결되어 있어야함**
 
@@ -32,7 +32,40 @@
 
 ## 종류
 
+### Binary Tree(이진 트리)
 
+> 자식을 최대 2개만 갖는 트리
+
+
+
+#### 포화 이진 트리
+
+![Full Binary Tree](https://github.com/JoongChangYang/DataStructure/blob/master/Assets/FullBinaryTree.png)
+
+- Leaf node를 제외한 나머지 노드의 자식 수가 2개
+- 모든 Leaf node의 깊이가 같다
+- 높이 h인 트리의 노드의 개수 : 2ʰ - 1
+
+
+
+#### 완전 이진 트리
+
+|                              A                               |                              B                               |                              C                               |
+| :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+| ![CompleteBinaryTree](https://github.com/JoongChangYang/DataStructure/blob/master/Assets/CompleteBinaryTree.png) | ![CompleteBinaryTree2](https://github.com/JoongChangYang/DataStructure/blob/master/Assets/CompleteBinaryTree2.png) | ![Non-CompleteBinaryTree](https://github.com/JoongChangYang/DataStructure/blob/master/Assets/Non-CompleteBinaryTree.png) |
+
+
+
+- 마지막 레벨을 제외한 모든 레벨의 node가 완전히 채워져 있음 
+- 마지막 레벨의 node들은 왼쪽부터 채워져 있는 구조
+- 포와 이진 트리도 완전 이진 트리에 포함된다
+- A와 B는 완전 이진 트리 이지만 C는 마지막 node가 오른쪽 부터 채워져 있기때문에 완전 이진 트리가 아니다
+
+
+
+### Non-Binary Tree
+
+> 자식의 개수에 제한이 없는 트리
 
 
 
