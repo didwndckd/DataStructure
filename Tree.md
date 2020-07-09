@@ -42,6 +42,7 @@
 
 ![Full Binary Tree](https://github.com/JoongChangYang/DataStructure/blob/master/Assets/FullBinaryTree.png)
 
+- 모든 레벨의 node가 완전히 채워져 있다
 - Leaf node를 제외한 나머지 노드의 자식 수가 2개
 - 모든 Leaf node의 깊이가 같다
 - 높이 h인 트리의 노드의 개수 : 2ʰ - 1
@@ -56,7 +57,7 @@
 
 
 
-- 마지막 레벨을 제외한 모든 레벨의 node가 완전히 채워져 있음 
+- 마지막 레벨을 제외한 모든 레벨의 node가 완전히 채워져 있다
 - 마지막 레벨의 node들은 왼쪽부터 채워져 있는 구조
 - 포와 이진 트리도 완전 이진 트리에 포함된다
 - A와 B는 완전 이진 트리 이지만 C는 마지막 node가 오른쪽 부터 채워져 있기때문에 완전 이진 트리가 아니다
@@ -69,9 +70,54 @@
 
 
 
+## 트리의 표현
+
+- 트리는 그래프이기 때문에 그래프 표현과 같은 방식으로 한다
+  - 트리는 루트가 있을 수도 없을 수도 있는데, 루트가 없다면 부모 자식 관계가 성립하지 않는 일반적인 그래프가 되기 때문 → 부모만 저장하는 것과 같다
+
+### 루트가 있는 트리를 저장하는 방법
+
+> 트리의 부모만 저장하는 방식
+
+![Full Binary Tree](https://github.com/JoongChangYang/DataStructure/blob/master/Assets/FullBinaryTree.png)
+
+| i         | 1    | 2    | 3    | 4    | 5    | 6    | 7    |
+| --------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| parent[i] | 0    | 1    | 1    | 2    | 2    | 3    | 3    |
+
+- 부모만 저장하기 → 모든 노드는 부모를 1개 또는 0개 갖기 때문
+- 부모가 없는 node는 루트
+- 루트 node에는 트리가 1부터 시작한다면 `0`, 0부터 시작한다면 `-1` 저장
+
+
+
+### 완전 이진 트리의 표현
+
+- 1차원 배열로 표현 가능
+
+  ![BinaryTreeFormula](https://github.com/JoongChangYang/DataStructure/blob/master/Assets/BinaryTreeFormula.png)
+
+  - 부모 노드가 `X`일 때 자식 노드는 왼쪽부터 `2X`, `2X + 1`의 관계를 가짐
+  - 완전 이진 트리는 배열이 가장 효율적이다
+
+- 트리 저장 방법의 차이
+
+  - 부모만 저장: 부모는 한번에 찾지만, 자식은 Node 개수만큼 시간이 걸림
+
+  - 일반 이진 트리는 구조체 클래스를 사용할 수 있다
+
+    ```swift
+    class Node {
+      var left: Node?
+      var right: Node?
+    }
+    ```
+
+    
+
 ## 트리의 순회
 
-### 이진 탐색 트리
+### 이진 트리
 
 - 트리의 모든 노드를 방문하는 순서.
 
