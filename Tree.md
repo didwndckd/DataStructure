@@ -159,7 +159,7 @@
         inOrder(node.left) // 왼쪽 가지 인오더
         visit(node) // 자기자신 처리
         inOrder(node.right) // 오른쪽 가지 인오더
-    	}
+      }
       ```
 
   - 후위 순회(Post-Order)
@@ -171,12 +171,12 @@
     - `4` → `5` → `2` → `6` → `7` → `3` → `1`
     
     ```swift
-      func postOrder(_ node: Node?) {
-        guard let node = node else { return }
-        postOrder(node.left) // 왼쪽 가지 포스트오더
-        postOrder(node.right) // 오른쪽 가지 포스트오더
-        visit(node) // 자기자신 처리
-    	}
+    func postOrder(_ node: Node?) {
+      guard let node = node else { return }
+      postOrder(node.left) // 왼쪽 가지 포스트오더
+      postOrder(node.right) // 오른쪽 가지 포스트오더
+      visit(node) // 자기자신 처리
+    }
     ```
     
       
