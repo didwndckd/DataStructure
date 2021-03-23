@@ -138,7 +138,7 @@
       func preOrder(_ node: Node?) {
         guard let node = node else { return }
         visit(node) // 자기 자신 처리
-      	preOrder(node.left) // 왼쪽 가지 프리오더
+        preOrder(node.left) // 왼쪽 가지 프리오더
         preOrder(node.right) // 오른쪽 가지 프리오더
   	  }
       ```
