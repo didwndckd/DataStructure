@@ -155,9 +155,9 @@
   
       ```swift
       func inOrder(_ node: Node?) {
-      guard let node = node else { return }
+        guard let node = node else { return }
         inOrder(node.left) // 왼쪽 가지 인오더
-      	visit(node) // 자기자신 처리
+        visit(node) // 자기자신 처리
         inOrder(node.right) // 오른쪽 가지 인오더
     	}
       ```
@@ -172,7 +172,7 @@
     
     ```swift
       func postOrder(_ node: Node?) {
-      guard let node = node else { return }
+        guard let node = node else { return }
         postOrder(node.left) // 왼쪽 가지 포스트오더
         postOrder(node.right) // 오른쪽 가지 포스트오더
         visit(node) // 자기자신 처리
