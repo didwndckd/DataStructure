@@ -7,11 +7,11 @@
 - Language: Swift
 
 ## Contents
-- [Basic](https://github.com/JoongChangYang/DataStructure/blob/master/Basic.md)
-- [Stack](https://github.com/JoongChangYang/DataStructure/blob/master/Stack.md)
-- [Queue](https://github.com/JoongChangYang/DataStructure/blob/master/Queue.md)
-- [Graph](https://github.com/JoongChangYang/DataStructure/blob/master/Graph.md)
-- [Tree](https://github.com/JoongChangYang/DataStructure/blob/master/Tree.md)
+- [Basic](Basic.md)
+- [Stack](Stack.md)
+- [Queue](Queue.md)
+- [Graph](Graph.md)
+- [Tree](Tree.md)
 
 
 
